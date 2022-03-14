@@ -1,0 +1,16 @@
+// variables and mixins - required for the rest of armstrong to work
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/imports';
+
+// icomoon iconset
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/icomoon';
+
+// basic theme - includes only functional and layout styling
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/basic';
+
+// includes a tonne of useful animations (required for use in the animated.scss theme)
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/animations';
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/animated';
+
+@import './fonts';
+@import './layout';
+@import './armstrong';

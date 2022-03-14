@@ -1,0 +1,39 @@
+$large: 1200px;
+$medium: 1024px;
+$small: 750px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin media-query-min($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin large {
+  @include media-query($large) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @include media-query($medium) {
+    @content;
+  }
+}
+
+@mixin small {
+  @include media-query($small) {
+    @content;
+  }
+}
+
+@mixin not-small {
+  @include media-query-min($small) {
+    @content;
+  }
+}

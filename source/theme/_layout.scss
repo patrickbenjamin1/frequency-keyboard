@@ -1,0 +1,25 @@
+@use './variables/colours';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: colours.$background;
+  color: colours.$foreground;
+  overflow-x: hidden;
+
+  ::selection {
+    background-color: transparentize(colours.$accent, 0.5);
+    color: colours.$white;
+  }
+}
+
+// see hooks/useDisableScroll for logic that adds this data attribute
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+html[data-scrolling-disabled='true'] {
+  overflow: hidden;
+}

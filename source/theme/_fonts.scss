@@ -1,0 +1,61 @@
+@use './variables/typography';
+@use './variables/colours';
+@use './variables/responsive';
+@use './variables/spacing';
+
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;800&display=swap');
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+  font-size: typography.$font-size-base;
+  font-family: typography.$font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: typography.$font-serif;
+}
+
+h2 {
+  font-family: typography.$font-serif;
+  text-align: center;
+  color: colours.$accent;
+  font-style: italic;
+}
+
+h3 {
+  font-family: typography.$font-serif;
+  color: colours.$accent;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+@include responsive.small {
+  html {
+    font-size: typography.$font-size-base-mobile;
+  }
+}
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+span.arrow {
+  margin-left: spacing.$xsmall;
+  font-family: sans-serif;
+}

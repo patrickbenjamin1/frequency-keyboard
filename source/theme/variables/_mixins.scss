@@ -1,0 +1,19 @@
+@import '~@rocketmakers/armstrong-edge/dist/imports';
+
+@mixin colourise($colour) {
+  position: relative;
+
+  > * {
+    filter: grayscale(100%);
+  }
+
+  &::after {
+    @include init-pseudo;
+    @include absolute-fill;
+
+    background-color: transparentize($colour, 0.8);
+    overflow: hidden;
+
+    @content;
+  }
+}

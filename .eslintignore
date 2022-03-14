@@ -1,0 +1,14 @@
+!**/*.ts*
+**/node_modules/
+node_modules
+dist
+*.gen.*
+*.generated.*
+**/stories/
+.eslintrc.js
+**/generated
+**/generated/*
+**/generated/**/*
+gatsby-*.js
+./*.js
+vite.config.ts

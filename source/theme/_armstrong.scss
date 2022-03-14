@@ -1,0 +1,47 @@
+@use './variables/spacing';
+@use './variables/colours';
+
+.arm-group {
+  .arm-group-inner {
+    gap: spacing.$small;
+
+    > *:not(:last-child) {
+      margin: inherit;
+    }
+  }
+}
+
+.arm-switch-input {
+  &[data-checked='true'] {
+    .arm-switch-input-inner {
+      background-color: colours.$accent;
+    }
+  }
+
+  .arm-switch-input-inner {
+    border-radius: 50px;
+
+    &::after {
+      border-radius: 50%;
+      background-color: colours.$white;
+    }
+  }
+}
+
+.arm-toast-notification-container-right {
+  max-width: 400px;
+
+  .arm-toast-notification-toasts {
+    padding: spacing.$small;
+
+    .arm-toast-notification-inner {
+      border-radius: spacing.$small;
+      padding: spacing.$small;
+      box-shadow: spacing.$xsmall spacing.$xsmall spacing.$small transparentize(colours.$black, 0.9);
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
