@@ -1,0 +1,11 @@
+@use '../theme/variables/spacing';
+
+.note-picker {
+  padding: spacing.$medium;
+
+  .note-picker-notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing.$xsmall;
+  }
+}

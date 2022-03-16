@@ -1,0 +1,35 @@
+@use '../theme/variables/mixins';
+@use '../theme/variables/colours';
+@use '../theme/variables/spacing';
+
+.keyboard {
+  @include mixins.flex-centre-content;
+  @include mixins.fill;
+
+  flex-direction: column;
+
+  .keyboard-keys {
+    display: flex;
+    height: 390px;
+  }
+
+  .settings {
+    @include mixins.flex-centre-content;
+
+    gap: spacing.$small;
+    flex-direction: column;
+    width: 330px;
+    border: 1px colours.$grey-light solid;
+    padding: spacing.$medium;
+    margin-bottom: spacing.$large;
+    border-radius: spacing.$small;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  .arm-button {
+    height: 200px;
+  }
+}

@@ -1,0 +1,22 @@
+@use '../theme/variables/colours';
+@use '../theme/variables/timing';
+@use '../theme/variables/spacing';
+
+.key {
+  border: 1px solid colours.$black;
+  width: 50px;
+  height: 140px;
+  border-radius: spacing.$small;
+  background-color: colours.$white;
+  cursor: pointer;
+  transition: background-color timing.$quick;
+
+  &[data-on='true'] {
+    background-color: colours.$accent;
+  }
+
+  .key-keyboard {
+    color: colours.$grey-dark;
+    padding: spacing.$xsmall;
+  }
+}

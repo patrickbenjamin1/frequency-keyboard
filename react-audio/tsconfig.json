@@ -20,5 +20,5 @@
     "lib": ["es2015", "es6", "dom"],
     "types": ["node"]
   },
-  "include": ["./source"]
+  "include": ["source"]
 }

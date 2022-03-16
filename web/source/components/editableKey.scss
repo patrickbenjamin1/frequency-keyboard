@@ -1,0 +1,51 @@
+@use '../theme/variables/spacing';
+@use '../theme/variables/timing';
+@use '../theme/variables/colours';
+
+.editable-key {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 spacing.$small;
+
+  .arm-input,
+  .arm-button,
+  .arm-button-minimal {
+    margin-top: spacing.$medium;
+
+    input {
+      width: 50px;
+    }
+  }
+
+  .fraction-input {
+    margin-top: spacing.$medium;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: spacing.$xsmall;
+
+    .arm-input {
+      margin-top: 0;
+    }
+  }
+
+  .frequency {
+    margin-top: spacing.$small;
+    color: colours.$grey-dark;
+  }
+
+  .buttons {
+    transition: opacity timing.$quick;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  &:hover {
+    .buttons {
+      opacity: 1;
+    }
+  }
+}

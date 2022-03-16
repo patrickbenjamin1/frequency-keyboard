@@ -1,0 +1,11 @@
+@use '../theme/variables/spacing';
+
+.interval-picker {
+  padding: spacing.$medium;
+
+  .interval-picker-intervals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing.$xsmall;
+  }
+}

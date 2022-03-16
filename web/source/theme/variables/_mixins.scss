@@ -1,4 +1,4 @@
-@import '~@rocketmakers/armstrong-edge/dist/imports';
+@import 'node_modules/@rocketmakers/armstrong-edge/dist/imports';
 
 @mixin colourise($colour) {
   position: relative;

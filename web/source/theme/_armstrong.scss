@@ -1,4 +1,5 @@
 @use './variables/spacing';
+@use './variables/mixins';
 @use './variables/colours';
 
 .arm-group {
@@ -44,4 +45,18 @@
       }
     }
   }
+}
+
+.arm-input-wrapper {
+  background-color: colours.$white;
+}
+
+.arm-button {
+  background-color: colours.$grey-light;
+  padding: spacing.$small;
+  border-radius: spacing.$small;
+}
+
+.arm-dialog-wrapper {
+  @include mixins.flex-centre-content;
 }
