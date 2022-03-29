@@ -4,8 +4,8 @@ import { ModalProvider } from '@rocketmakers/armstrong-edge';
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 
-import { AudioContextProvider } from '../../react-audio/source/hooks/useAudioContext';
-import { OscillatorsProvider } from '../../react-audio/source/hooks/useOscillator';
+import { AudioContextProvider } from '../hooks/useAudioContext';
+import { OscillatorsProvider } from '../hooks/useOscillator';
 import { MainView } from './views/main';
 
 const Providers: React.FC = ({ children }) => (

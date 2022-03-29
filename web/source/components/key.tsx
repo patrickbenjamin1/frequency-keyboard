@@ -3,7 +3,7 @@ import './key.scss';
 import { useDidUpdateEffect } from '@rocketmakers/armstrong-edge';
 import * as React from 'react';
 
-import { useOscillator } from '../../../react-audio/source/hooks/useOscillator';
+import { useOscillator } from '../../hooks/useOscillator';
 import { KeyboardUtils } from '../utils/keyboard';
 
 export type KeyTriggerMode = 'hold' | 'one' | 'toggle';

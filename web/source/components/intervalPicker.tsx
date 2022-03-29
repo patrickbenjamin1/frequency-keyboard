@@ -3,7 +3,7 @@ import './intervalPicker.scss';
 import { Button } from '@rocketmakers/armstrong-edge';
 import * as React from 'react';
 
-import { Frequencies } from '../../../react-audio/source/utils/frequencies';
+import { Frequencies } from '../../utils/frequencies';
 
 export interface IIntervalPickerProps {
   onPickInterval: (name: string, ratio: number) => void;
